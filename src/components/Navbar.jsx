@@ -8,7 +8,7 @@ function Navbar(){
     `pb-1 transition-all duration-200 border-b-2 ${
       isActive 
         ? "text-indigo-500 border-indigo-500" 
-        : "text-slate-600 border-transparent hover:text-indigo-400 hover:border-indigo-400"
+        : "text-slate-600 border-transparent hover:text-indigo-400"
     }`;
 
     const {Budget,setBudget} = useBudget();
