@@ -12,13 +12,13 @@ function DettaglioProdotto(){
 
     useEffect(() => {
         axios.get(`https://fakestoreapi.com/products/${id}`)
-            .then(res => {
-                setTimeout(() => {
-                    setProdotto(res.data);
-                    setCaricamento(false);
-                },400);
-            })
-            .catch((err) => console.err());
+        .then(res => {
+            setTimeout(() => {
+                setProdotto(res.data);
+                setCaricamento(false);
+            },400);
+        })
+        .catch((err) => console.err());
     }, [id, navigate]);
 
     return(
